@@ -20,33 +20,33 @@ const services = [
   },
   {
     name: "Haarschnitt Herren",
-    description: "Klassische und moderne Herrenschnitte, Bartpflege optional.",
+    description: "Klassische und moderne Herrenschnitte.",
     icon: User,
-    price: "Ab 25€",
+    price: "Ab 30€",
   },
   {
     name: "Haarschnitt Kinder",
     description: "Sanfte und spielerische Schnitte für die Kleinsten.",
     icon: Users,
-    price: "Ab 20€",
+    price: "Ab 25€",
   },
   {
     name: "Färben & Tönen",
     description: "Natürliche Farben, Strähnen und Ansätze.",
     icon: Palette,
-    price: "Ab 45€",
+    price: "Ab 30€",
   },
   {
-    name: "Styling & Festfrisuren",
-    description: "Hochzeiten, Events, besondere Anlässe.",
+    name: "Styling & Föhnen",
+    description: "Föhnfrisuren und Styling für jeden Anlass.",
     icon: Crown,
-    price: "Ab 40€",
+    price: "Ab 20€",
   },
   {
     name: "Intensivpflege",
     description: "Haarkuren, Masken und Behandlungen für gesundes Haar.",
     icon: Sparkles,
-    price: "Ab 30€",
+    price: "Ab 35€",
   },
 ];
 
