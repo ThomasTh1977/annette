@@ -37,7 +37,7 @@ const pricing = [
   {
     category: "Styling & Pflege",
     items: [
-      { service: "Föhnfrisur", price: "25€" },
+      { service: "Föhnen", price: "Ab 20€" },
       { service: "Feststyling", price: "50€" },
       { service: "Haarkur/Intensivpflege", price: "35€" },
     ],
