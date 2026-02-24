@@ -144,7 +144,7 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-2 text-stone-500 text-sm">
                 <Scissors className="w-4 h-4 text-rose-400" />
-                <span>10+ Jahre Erfahrung</span>
+                <span>20+ Jahre Erfahrung</span>
               </div>
               <div className="flex items-center gap-2 text-stone-500 text-sm">
                 <Heart className="w-4 h-4 fill-rose-300 text-rose-400" />
