@@ -1,13 +1,30 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Great_Vibes, Playfair_Display, Raleway } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/shell/Header";
 import { Footer } from "@/components/shell/Footer";
 import { MobileStickyCTA } from "@/components/shell/MobileStickyCTA";
 
-const inter = Inter({
+const raleway = Raleway({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-raleway",
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+});
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  variable: "--font-great-vibes",
+  display: "swap",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -42,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body
-        className={`${inter.variable} font-sans antialiased bg-gradient-to-br from-stone-950 via-zinc-900 to-stone-950 min-h-screen`}
+        className={`${raleway.variable} ${playfairDisplay.variable} ${greatVibes.variable} font-sans antialiased bg-gradient-to-br from-stone-950 via-zinc-900 to-stone-950 min-h-screen`}
       >
         <Header />
         <div className="pt-20 xl:pt-24 pb-24 md:pb-0"> {/* Account for fixed header (h-20/xl:h-24) and mobile sticky CTA */}

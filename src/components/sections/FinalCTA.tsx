@@ -10,7 +10,7 @@ export function FinalCTA() {
       <Container>
         <div className="text-center relative z-10">
           <p className="text-amber-500 text-sm font-semibold tracking-widest uppercase mb-4">✨ Jetzt anfragen</p>
-          <h2 className="text-[clamp(1.8rem,3.5vw,3.5rem)] font-bold mb-5 leading-tight">
+          <h2 className="font-serif text-[clamp(1.8rem,3.5vw,3.5rem)] font-bold mb-5 leading-tight italic gold-glow">
             Bereit für Ihren nächsten Termin?
           </h2>
           <p className="text-[clamp(1rem,1.5vw,1.3rem)] mb-10 opacity-90 max-w-xl mx-auto">

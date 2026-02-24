@@ -31,10 +31,10 @@ export function Header() {
                 <Scissors className="w-4 h-4 xl:w-5 xl:h-5 text-stone-950" />
               </div>
               <div className="flex flex-col leading-tight">
-                <span className="font-bold text-xl xl:text-2xl bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
+                <span className="font-script text-3xl xl:text-4xl bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent gold-glow" style={{ lineHeight: 1.1 }}>
                   {siteConfig.name}
                 </span>
-                <span className="text-[10px] xl:text-xs text-amber-600 font-medium tracking-widest uppercase">
+                <span className="text-[9px] xl:text-[11px] text-amber-600 font-sans font-medium tracking-[0.2em] uppercase" style={{ letterSpacing: '0.18em' }}>
                   Mobile Friseurin · Bad Säckingen
                 </span>
               </div>
@@ -52,7 +52,7 @@ export function Header() {
               >
                 <Link
                   href={item.href}
-                  className="relative group text-base xl:text-lg font-medium text-stone-300 hover:text-amber-400 transition-colors duration-200"
+                  className="relative group text-sm xl:text-base font-medium text-stone-300 hover:text-amber-400 transition-colors duration-200 tracking-[0.08em] uppercase"
                 >
                   {item.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-amber-400 to-yellow-400 group-hover:w-full transition-all duration-300 rounded-full" />

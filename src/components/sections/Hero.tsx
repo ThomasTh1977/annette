@@ -88,7 +88,7 @@ export function Hero() {
 
             {/* Headline */}
             <motion.h1
-              className="text-[clamp(2rem,4.5vw,6rem)] font-bold tracking-tight leading-tight mb-6 bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent"
+              className="font-serif text-[clamp(2rem,4.5vw,5.5rem)] font-bold tracking-tight leading-tight mb-6 bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent gold-glow italic"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -98,7 +98,7 @@ export function Hero() {
 
             {/* Subtitle */}
             <motion.p
-              className="text-[clamp(1rem,1.4vw,1.5rem)] text-stone-500 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0"
+              className="font-sans text-[clamp(1rem,1.4vw,1.4rem)] text-stone-400 mb-10 leading-[1.8] max-w-xl mx-auto lg:mx-0 tracking-wide font-light"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
