@@ -14,7 +14,7 @@ export function AboutAnnette() {
               {copy.about.text}
             </p>
             <p className="text-muted-foreground">
-              Mit über 10 Jahren Erfahrung in der Friseurbranche biete ich Ihnen professionelle Dienstleistungen direkt bei Ihnen zu Hause. Von klassischen Schnitten bis hin zu modernen Stylings – ich helfe Ihnen, Ihr bestes Aussehen zu erreichen.
+              Mit über 20 Jahren Erfahrung in der Friseurbranche biete ich Ihnen professionelle Dienstleistungen direkt bei Ihnen zu Hause. Von klassischen Schnitten bis hin zu modernen Stylings – ich helfe Ihnen, Ihr bestes Aussehen zu erreichen.
             </p>
           </div>
           <div className="relative">
