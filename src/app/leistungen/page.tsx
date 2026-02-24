@@ -32,7 +32,7 @@ const services = [
   },
   {
     name: "Färben & Tönen",
-    description: "Natürliche Farben, Highlights, Strähnen und Ansätze.",
+    description: "Natürliche Farben, Strähnen und Ansätze.",
     icon: Palette,
     price: "Ab 45€",
   },

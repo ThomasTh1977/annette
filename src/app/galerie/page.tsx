@@ -24,7 +24,7 @@ const galleryCategories = {
     { src: "/images/friseur-3.jpg", alt: "Eleganter Bob-Schnitt" },
   ],
   farbe: [
-    { src: "/images/friseur-4.jpg", alt: "Highlights und Strähnentechnik" },
+    { src: "/images/friseur-4.jpg", alt: "Strähnen" },
     { src: "/images/friseur-2.jpg", alt: "Modernes Colordesign" },
   ],
   styling: [
