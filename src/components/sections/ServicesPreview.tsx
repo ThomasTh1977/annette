@@ -37,11 +37,11 @@ export function ServicesPreview() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-rose-50/60 via-white to-pink-50/40 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-zinc-900 via-stone-900 to-zinc-950 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-20 right-20 w-32 h-32 bg-gradient-to-r from-rose-200 to-pink-200 rounded-full blur-3xl opacity-40" />
-        <div className="absolute bottom-20 left-20 w-40 h-40 bg-gradient-to-r from-amber-100 to-rose-100 rounded-full blur-3xl opacity-30" />
+        <div className="absolute top-20 right-20 w-32 h-32 bg-gradient-to-r from-amber-800 to-yellow-800 rounded-full blur-3xl opacity-20" />
+        <div className="absolute bottom-20 left-20 w-40 h-40 bg-gradient-to-r from-amber-900 to-stone-800 rounded-full blur-3xl opacity-20" />
       </div>
 
       <Container>
@@ -85,7 +85,7 @@ export function ServicesPreview() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <Button asChild size="lg" className="bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white shadow-lg shadow-rose-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-0">
+          <Button asChild size="lg" className="bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-stone-950 shadow-lg shadow-amber-900/50 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-0">
             <Link href="/leistungen">Alle Leistungen ansehen</Link>
           </Button>
         </motion.div>

@@ -41,7 +41,7 @@ export function GalleryPreview() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-white to-rose-50/50 relative">
+    <section className="py-20 bg-gradient-to-br from-stone-950 to-zinc-900 relative">
               <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width=%2260%22%20height=%2260%22%20viewBox=%270%200%2060%2060%27%20xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cg%20fill=%27none%27%20fill-rule=%27evenodd%27%3E%3Cg%20fill=%27%23000000%27%20fill-opacity=%270.02%27%3E%3Ccircle%20cx=%2730%27%20cy=%2730%27%20r=%274%27/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40" />
 
       <Container>
@@ -93,7 +93,7 @@ export function GalleryPreview() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <Button asChild size="lg" className="bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white shadow-lg shadow-rose-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-0">
+          <Button asChild size="lg" className="bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-stone-950 shadow-lg shadow-amber-900/50 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-0">
             <Link href="/galerie">Vollständige Galerie ansehen</Link>
           </Button>
         </motion.div>

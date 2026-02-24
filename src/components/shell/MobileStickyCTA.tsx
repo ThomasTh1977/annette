@@ -9,7 +9,7 @@ import { buildWhatsAppLink } from "@/lib/whatsapp";
 export function MobileStickyCTA() {
   return (
     <motion.div
-      className="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-rose-100 p-3 md:hidden shadow-lg shadow-rose-100/50"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-stone-950/95 backdrop-blur-md border-t border-amber-900/40 p-3 md:hidden shadow-lg shadow-amber-900/30"
       initial={{ y: 100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, delay: 0.5 }}
@@ -20,7 +20,7 @@ export function MobileStickyCTA() {
             asChild
             variant="outline"
             size="lg"
-            className="w-full border-2 border-rose-200 bg-white text-rose-600 hover:bg-rose-50 font-semibold py-2.5 rounded-xl text-sm sm:text-base transition-all duration-200"
+            className="w-full border-2 border-amber-700 bg-transparent text-amber-400 hover:bg-amber-900/30 font-semibold py-2.5 rounded-xl text-sm sm:text-base transition-all duration-200"
           >
             <a href={`tel:${siteConfig.phone}`} className="flex items-center justify-center gap-2">
               <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -32,7 +32,7 @@ export function MobileStickyCTA() {
           <Button
             asChild
             size="lg"
-            className="w-full bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold py-2.5 rounded-xl text-sm sm:text-base shadow-md shadow-rose-200 border-0 transition-all duration-200"
+            className="w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-stone-950 font-semibold py-2.5 rounded-xl text-sm sm:text-base shadow-md shadow-amber-900/50 border-0 transition-all duration-200"
           >
             <a href={buildWhatsAppLink()} rel="noopener noreferrer" className="flex items-center justify-center gap-2">
               <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />

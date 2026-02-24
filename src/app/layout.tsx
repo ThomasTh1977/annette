@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body
-        className={`${inter.variable} font-sans antialiased bg-gradient-to-br from-rose-50 via-white to-pink-50 min-h-screen`}
+        className={`${inter.variable} font-sans antialiased bg-gradient-to-br from-stone-950 via-zinc-900 to-stone-950 min-h-screen`}
       >
         <Header />
         <div className="pt-20 xl:pt-24 pb-24 md:pb-0"> {/* Account for fixed header (h-20/xl:h-24) and mobile sticky CTA */}

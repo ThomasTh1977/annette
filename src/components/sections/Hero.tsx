@@ -9,16 +9,16 @@ import { copy } from "@/content/copy-de";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[calc(100vh-5rem)] xl:min-h-[calc(100vh-6rem)] flex items-center py-16 overflow-hidden bg-gradient-to-br from-rose-50 via-pink-50/60 to-amber-50/40">
+    <section className="relative min-h-[calc(100vh-5rem)] xl:min-h-[calc(100vh-6rem)] flex items-center py-16 overflow-hidden bg-gradient-to-br from-stone-950 via-zinc-900 to-stone-950">
 
       {/* Soft background blobs */}
-      <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-rose-200/25 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/4 pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-pink-200/25 rounded-full blur-3xl translate-x-1/3 translate-y-1/4 pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 w-[700px] h-[300px] bg-amber-100/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-amber-900/15 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/4 pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-yellow-900/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/4 pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 w-[700px] h-[300px] bg-amber-800/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
 
       {/* Floating hairdresser icons */}
       <motion.div
-        className="absolute top-24 left-[6%] text-rose-300 pointer-events-none"
+        className="absolute top-24 left-[6%] text-amber-500 pointer-events-none"
         animate={{ rotate: [0, 20, -8, 0], y: [0, -10, 6, 0] }}
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
       >
@@ -34,7 +34,7 @@ export function Hero() {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-28 left-[10%] text-pink-400 pointer-events-none"
+        className="absolute bottom-28 left-[10%] text-yellow-400 pointer-events-none"
         animate={{ y: [0, -18, 0], opacity: [0.6, 1, 0.6] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
       >
@@ -42,7 +42,7 @@ export function Hero() {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-36 right-[12%] text-rose-300 pointer-events-none"
+        className="absolute bottom-36 right-[12%] text-amber-500 pointer-events-none"
         animate={{ rotate: [0, -25, 10, 0], scale: [1, 1.1, 0.95, 1] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
       >
@@ -53,7 +53,7 @@ export function Hero() {
       {[...Array(5)].map((_, i) => (
         <motion.div
           key={i}
-          className="absolute rounded-full bg-rose-300/50 pointer-events-none"
+          className="absolute rounded-full bg-amber-500/30 pointer-events-none"
           style={{
             width: `${8 + i * 2}px`,
             height: `${8 + i * 2}px`,
@@ -77,7 +77,7 @@ export function Hero() {
           >
             {/* Badge */}
             <motion.div
-              className="inline-flex items-center gap-2 bg-rose-100 text-rose-700 text-sm font-semibold px-4 py-2 rounded-full mb-6 border border-rose-200/80 shadow-sm"
+              className="inline-flex items-center gap-2 bg-amber-900/60 text-amber-300 text-sm font-semibold px-4 py-2 rounded-full mb-6 border border-amber-700/60 shadow-sm"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -88,7 +88,7 @@ export function Hero() {
 
             {/* Headline */}
             <motion.h1
-              className="text-[clamp(2rem,4.5vw,6rem)] font-bold tracking-tight leading-tight mb-6 bg-gradient-to-r from-rose-700 via-rose-500 to-pink-500 bg-clip-text text-transparent"
+              className="text-[clamp(2rem,4.5vw,6rem)] font-bold tracking-tight leading-tight mb-6 bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -115,13 +115,13 @@ export function Hero() {
             >
               <CTAButton
                 variant="whatsapp"
-                className="text-base xl:text-lg px-8 py-3 bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white border-0 shadow-lg shadow-rose-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="text-base xl:text-lg px-8 py-3 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-stone-950 border-0 shadow-lg shadow-amber-900/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 {copy.hero.cta}
               </CTAButton>
               <CTAButton
                 variant="phone"
-                className="text-base xl:text-lg px-8 py-3 bg-white border-2 border-rose-200 text-rose-700 hover:bg-rose-50 hover:border-rose-300 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                className="text-base xl:text-lg px-8 py-3 bg-transparent border-2 border-amber-700 text-amber-400 hover:bg-amber-900/30 hover:border-amber-500 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
                 Anrufen
               </CTAButton>
@@ -143,11 +143,11 @@ export function Hero() {
                 <span>Top bewertet</span>
               </div>
               <div className="flex items-center gap-2 text-stone-500 text-sm">
-                <Scissors className="w-4 h-4 text-rose-400" />
+                <Scissors className="w-4 h-4 text-amber-400" />
                 <span>20+ Jahre Erfahrung</span>
               </div>
               <div className="flex items-center gap-2 text-stone-500 text-sm">
-                <Heart className="w-4 h-4 fill-rose-300 text-rose-400" />
+                <Heart className="w-4 h-4 fill-amber-400 text-amber-400" />
                 <span>Direkt zu Ihnen nach Hause</span>
               </div>
             </motion.div>
@@ -162,17 +162,17 @@ export function Hero() {
           >
             {/* Rotating decorative rings */}
             <motion.div
-              className="absolute w-[105%] h-[105%] rounded-full border-2 border-rose-200/50"
+              className="absolute w-[105%] h-[105%] rounded-full border-2 border-amber-600/40"
               animate={{ rotate: 360 }}
               transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
             />
             <motion.div
-              className="absolute w-[118%] h-[118%] rounded-full border border-dashed border-pink-200/40"
+              className="absolute w-[118%] h-[118%] rounded-full border border-dashed border-yellow-600/30"
               animate={{ rotate: -360 }}
               transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
             />
             <motion.div
-              className="absolute w-[130%] h-[130%] rounded-full border border-amber-200/25"
+              className="absolute w-[130%] h-[130%] rounded-full border border-amber-700/20"
               animate={{ rotate: 360 }}
               transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
             />
@@ -184,10 +184,10 @@ export function Hero() {
               className="relative z-10"
             >
               {/* Glow */}
-              <div className="absolute -inset-6 bg-gradient-to-br from-rose-300 via-pink-300 to-amber-200 rounded-full blur-2xl opacity-35 pointer-events-none" />
+              <div className="absolute -inset-6 bg-gradient-to-br from-amber-600 via-yellow-500 to-amber-400 rounded-full blur-2xl opacity-35 pointer-events-none" />
 
               {/* Circular image */}
-              <div className="relative bg-gradient-to-br from-rose-100 to-pink-50 rounded-full p-3 shadow-2xl shadow-rose-200/60">
+              <div className="relative bg-gradient-to-br from-stone-800 to-zinc-900 rounded-full p-3 shadow-2xl shadow-amber-900/60">
                 <div className="rounded-full overflow-hidden w-64 h-64 sm:w-80 sm:h-80 xl:w-[26rem] xl:h-[26rem]">
                   <Image
                     src="/images/friseur-1.jpg"
@@ -202,27 +202,27 @@ export function Hero() {
 
               {/* Floating info card – top right */}
               <motion.div
-                className="absolute -top-4 -right-2 xl:-top-6 xl:-right-4 bg-white rounded-2xl shadow-lg shadow-rose-100/80 px-4 py-2.5 flex items-center gap-2.5 border border-rose-50"
+                className="absolute -top-4 -right-2 xl:-top-6 xl:-right-4 bg-stone-900 rounded-2xl shadow-lg shadow-amber-900/40 px-4 py-2.5 flex items-center gap-2.5 border border-amber-800/50"
                 animate={{ y: [0, -7, 0] }}
                 transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut", delay: 0.4 }}
               >
                 <span className="text-xl">⭐</span>
                 <div>
-                  <div className="text-xs font-bold text-stone-800 leading-tight">5.0 Bewertung</div>
-                  <div className="text-[10px] text-stone-400">Top Friseurin</div>
+                  <div className="text-xs font-bold text-amber-200 leading-tight">5.0 Bewertung</div>
+                  <div className="text-[10px] text-stone-500">Top Friseurin</div>
                 </div>
               </motion.div>
 
               {/* Floating info card – bottom left */}
               <motion.div
-                className="absolute -bottom-4 -left-2 xl:-bottom-6 xl:-left-4 bg-white rounded-2xl shadow-lg shadow-rose-100/80 px-4 py-2.5 flex items-center gap-2.5 border border-rose-50"
+                className="absolute -bottom-4 -left-2 xl:-bottom-6 xl:-left-4 bg-stone-900 rounded-2xl shadow-lg shadow-amber-900/40 px-4 py-2.5 flex items-center gap-2.5 border border-amber-800/50"
                 animate={{ y: [0, 7, 0] }}
                 transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               >
                 <span className="text-xl">✂️</span>
                 <div>
-                  <div className="text-xs font-bold text-stone-800 leading-tight">Hausbesuch</div>
-                  <div className="text-[10px] text-stone-400">Bad Säckingen</div>
+                  <div className="text-xs font-bold text-amber-200 leading-tight">Hausbesuch</div>
+                  <div className="text-[10px] text-stone-500">Bad Säckingen</div>
                 </div>
               </motion.div>
             </motion.div>

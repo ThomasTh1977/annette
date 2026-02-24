@@ -12,7 +12,7 @@ import { buildWhatsAppLink } from "@/lib/whatsapp";
 export function Header() {
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-50 w-full bg-white/95 backdrop-blur-lg border-b border-rose-100/80 shadow-sm shadow-rose-100/40"
+      className="fixed top-0 left-0 right-0 z-50 w-full bg-stone-950/95 backdrop-blur-lg border-b border-amber-900/40 shadow-sm shadow-amber-900/20"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -27,14 +27,14 @@ export function Header() {
             className="shrink-0"
           >
             <Link href="/" className="flex items-center gap-3">
-              <div className="w-9 h-9 xl:w-11 xl:h-11 rounded-full bg-gradient-to-br from-rose-400 to-pink-500 flex items-center justify-center shadow-md shadow-rose-200 shrink-0">
-                <Scissors className="w-4 h-4 xl:w-5 xl:h-5 text-white" />
+              <div className="w-9 h-9 xl:w-11 xl:h-11 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center shadow-md shadow-amber-900/50 shrink-0">
+                <Scissors className="w-4 h-4 xl:w-5 xl:h-5 text-stone-950" />
               </div>
               <div className="flex flex-col leading-tight">
-                <span className="font-bold text-xl xl:text-2xl bg-gradient-to-r from-rose-700 via-rose-500 to-pink-500 bg-clip-text text-transparent">
+                <span className="font-bold text-xl xl:text-2xl bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
                   {siteConfig.name}
                 </span>
-                <span className="text-[10px] xl:text-xs text-rose-400 font-medium tracking-widest uppercase">
+                <span className="text-[10px] xl:text-xs text-amber-600 font-medium tracking-widest uppercase">
                   Mobile Friseurin · Bad Säckingen
                 </span>
               </div>
@@ -52,10 +52,10 @@ export function Header() {
               >
                 <Link
                   href={item.href}
-                  className="relative group text-base xl:text-lg font-medium text-stone-600 hover:text-rose-600 transition-colors duration-200"
+                  className="relative group text-base xl:text-lg font-medium text-stone-300 hover:text-amber-400 transition-colors duration-200"
                 >
                   {item.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-rose-500 to-pink-400 group-hover:w-full transition-all duration-300 rounded-full" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-amber-400 to-yellow-400 group-hover:w-full transition-all duration-300 rounded-full" />
                 </Link>
               </motion.div>
             ))}
@@ -68,7 +68,7 @@ export function Header() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="hidden sm:flex items-center gap-2 border-rose-200 text-rose-600 hover:bg-rose-50 hover:border-rose-300 text-base xl:text-lg px-5 xl:px-6 h-11 xl:h-12 rounded-xl font-semibold transition-all duration-200"
+                className="hidden sm:flex items-center gap-2 border-amber-700 text-amber-400 hover:bg-amber-900/30 hover:border-amber-500 text-base xl:text-lg px-5 xl:px-6 h-11 xl:h-12 rounded-xl font-semibold transition-all duration-200"
               >
                 <a href={`tel:${siteConfig.phone}`}>
                   <Phone className="w-4 h-4 xl:w-5 xl:h-5" />
@@ -81,7 +81,7 @@ export function Header() {
               <Button
                 asChild
                 size="lg"
-                className="flex items-center gap-2 bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold shadow-md shadow-rose-200 hover:shadow-rose-300 text-base xl:text-lg px-5 xl:px-6 h-11 xl:h-12 rounded-xl transition-all duration-200 border-0"
+                className="flex items-center gap-2 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-stone-950 font-semibold shadow-md shadow-amber-900/50 text-base xl:text-lg px-5 xl:px-6 h-11 xl:h-12 rounded-xl transition-all duration-200 border-0"
               >
                 <a href={buildWhatsAppLink()} rel="noopener noreferrer">
                   <MessageCircle className="w-4 h-4 xl:w-5 xl:h-5" />
