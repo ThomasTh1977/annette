@@ -10,9 +10,18 @@ node_modules/
 # Production
 /build
 
-# Env files
+# Env files (alle Varianten absichern)
 .env
+.env.local
+.env.development
+.env.development.local
+.env.production
+.env.production.local
+.env.staging
 .env*.local
+*.pem
+*.key
+secrets.*
 
 # Debug logs
 npm-debug.log*
