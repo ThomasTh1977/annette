@@ -15,9 +15,9 @@ const pricing = [
   {
     category: "Haarschnitt",
     items: [
-      { service: "Damen Kurzhaar", price: "40€" },
-      { service: "Damen Mittel", price: "50€" },
-      { service: "Damen Lang", price: "55€" },
+      { service: "Damen Kurzhaar", price: "35€" },
+      { service: "Damen Mittel", price: "45€" },
+      { service: "Damen Lang", price: "50€" },
       { service: "Herren", price: "30€" },
       { service: "Kinder bis 12 Jahre", price: "25€" },
     ],
