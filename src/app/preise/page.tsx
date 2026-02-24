@@ -40,7 +40,6 @@ const pricing = [
       { service: "Föhnfrisur", price: "25€" },
       { service: "Feststyling", price: "50€" },
       { service: "Haarkur/Intensivpflege", price: "35€" },
-      { service: "Bartpflege", price: "20€" },
     ],
   },
 ];
