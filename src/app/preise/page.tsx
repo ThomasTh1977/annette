@@ -15,19 +15,19 @@ const pricing = [
   {
     category: "Haarschnitt",
     items: [
-      { service: "Damen Kurzhaar", price: "42€" },
-      { service: "Damen Mittel", price: "48€" },
-      { service: "Damen Lang", price: "54€" },
+      { service: "Damen Kurzhaar", price: "40€" },
+      { service: "Damen Mittel", price: "50€" },
+      { service: "Damen Lang", price: "55€" },
       { service: "Herren", price: "30€" },
-      { service: "Kinder bis 12 Jahre", price: "24€" },
+      { service: "Kinder bis 12 Jahre", price: "25€" },
     ],
   },
   {
     category: "Färben & Tönen",
     items: [
-      { service: "Ansatz färben", price: "42€" },
-      { service: "Komplettfärbung Kurz", price: "54€" },
-      { service: "Komplettfärbung Lang", price: "78€" },
+      { service: "Ansatz färben", price: "40€" },
+      { service: "Komplettfärbung Kurz", price: "55€" },
+      { service: "Komplettfärbung Lang", price: "80€" },
       { service: "Highlights/Strähnen", price: "Ab 60€" },
       { service: "Tönen", price: "30€" },
     ],
@@ -35,10 +35,10 @@ const pricing = [
   {
     category: "Styling & Pflege",
     items: [
-      { service: "Föhnfrisur", price: "24€" },
-      { service: "Feststyling", price: "48€" },
-      { service: "Haarkur/Intensivpflege", price: "36€" },
-      { service: "Bartpflege", price: "18€" },
+      { service: "Föhnfrisur", price: "25€" },
+      { service: "Feststyling", price: "50€" },
+      { service: "Haarkur/Intensivpflege", price: "35€" },
+      { service: "Bartpflege", price: "20€" },
     ],
   },
 ];
