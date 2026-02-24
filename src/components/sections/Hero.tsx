@@ -9,7 +9,24 @@ import { copy } from "@/content/copy-de";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[calc(100vh-5rem)] xl:min-h-[calc(100vh-6rem)] flex items-center py-16 overflow-hidden bg-gradient-to-br from-stone-950 via-zinc-900 to-stone-950">
+    <section className="relative min-h-[calc(100vh-5rem)] xl:min-h-[calc(100vh-6rem)] flex items-center py-16 overflow-hidden bg-stone-950">
+
+      {/* ── Full-bleed background photo – sofort sichtbar auf Handy ── */}
+      <div className="absolute inset-0 pointer-events-none">
+        <Image
+          src="/images/friseur-1.jpg"
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Dark cinematic overlay: oben & unten dunkler, Mitte etwas heller */}
+        <div className="absolute inset-0 bg-gradient-to-b from-stone-950/85 via-stone-950/60 to-stone-950/90" />
+        {/* Seitliche Abdunkelung für bessere Lesbarkeit */}
+        <div className="absolute inset-0 bg-gradient-to-r from-stone-950/80 via-transparent to-stone-950/60" />
+        {/* Gold-Schimmer von oben */}
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-transparent to-yellow-900/10" />
+      </div>
 
       {/* Soft background blobs */}
       <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-amber-900/15 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/4 pointer-events-none" />
@@ -65,7 +82,7 @@ export function Hero() {
         />
       ))}
 
-      <Container>
+      <Container className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 items-center">
 
           {/* ── Text column ── */}
@@ -153,9 +170,9 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* ── Image column ── */}
+          {/* ── Image column – nur auf Desktop sichtbar (Handy: Hintergrundbild) ── */}
           <motion.div
-            className="relative flex justify-center items-center"
+            className="relative hidden lg:flex justify-center items-center"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
