@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fff8f9;
+  --foreground: #1c0a0f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  /* Fluid base font: skaliert von 15px (375px Viewport) bis 20px (1920px Viewport) */
+  font-size: clamp(15px, 0.9vw + 11.6px, 20px);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
