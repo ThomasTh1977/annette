@@ -15,30 +15,41 @@ const pricing = [
   {
     category: "Haarschnitt",
     items: [
-      { service: "Damen Kurzhaar", price: "35€" },
-      { service: "Damen Mittel", price: "45€" },
-      { service: "Damen Lang", price: "50€" },
-      { service: "Herren", price: "30€" },
-      { service: "Kinder bis 12 Jahre", price: "25€" },
+      { service: "Schneiden Kurz", price: "40€" },
+      { service: "Schneiden Mittel", price: "45€" },
+      { service: "Schneiden Lang", price: "50€" },
+      { service: "Herrenschnitt", price: "35€" },
+      { service: "Kinder bis 12 Jahre", price: "20€" },
+      { service: "Pony schneiden", price: "5€" },
     ],
   },
   {
-    category: "Färben & Tönen",
+    category: "Farbe & Strähnen",
     items: [
-      { service: "Ansatz färben", price: "40€" },
-      { service: "Komplettfärbung Kurz", price: "55€" },
-      { service: "Komplettfärbung Lang", price: "80€" },
-      { service: "Strähnen Kurzhaar", price: "Ab 50€" },
-      { service: "Strähnen Mittelhaar", price: "Ab 75€" },
-      { service: "Strähnen Langhaar", price: "Ab 80€" },
-      { service: "Tönen", price: "30€" },
+      { service: "Farbe kurzes Haar", price: "40€" },
+      { service: "Farbe mittellanges Haar", price: "60€" },
+      { service: "Farbe langes Haar", price: "80€" },
+      { service: "Ansatzfarbe mittel", price: "45€" },
+      { service: "Ansatzfarbe lang", price: "50€" },
+      { service: "Strähnen kurz", price: "Ab 65€" },
+      { service: "Strähnen mittel", price: "Ab 85€" },
+      { service: "Strähnen lang", price: "Ab 95€" },
+      { service: "Glanz-Pflege-Tönung", price: "Ab 30€" },
     ],
   },
   {
     category: "Styling & Pflege",
     items: [
-      { service: "Föhnen", price: "Ab 20€" },
-      { service: "Haarkur/Intensivpflege", price: "35€" },
+      { service: "Föhnen (nach Aufwand)", price: "15–30€" },
+      { service: "Glätten (nach Aufwand)", price: "20–30€" },
+      { service: "Dauerwelle inkl. Schneiden", price: "80€" },
+    ],
+  },
+  {
+    category: "Augen & Extras",
+    items: [
+      { service: "Wimpern färben", price: "15€" },
+      { service: "Augenbrauen färben", price: "7€" },
     ],
   },
 ];
@@ -52,7 +63,7 @@ export default function Preise() {
             title="Preisliste"
             subtitle="Faire Preise für hochwertige Dienstleistungen"
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mb-12">
             {pricing.map((category) => (
               <Card key={category.category}>
                 <CardHeader>

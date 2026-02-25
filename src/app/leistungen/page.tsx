@@ -3,50 +3,50 @@ import { Container } from "@/components/shell/Container";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { FeatureCard } from "@/components/common/FeatureCard";
 import { FinalCTA } from "@/components/sections/FinalCTA";
-import { Scissors, Palette, Sparkles, User, Users, Crown } from "lucide-react";
+import { Scissors, Palette, Sparkles, User, Users, Eye } from "lucide-react";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata(
   "Friseurdienste - Annette Theobald",
-  "Professionelle Haarschnitte, Färben und Styling für Damen, Herren und Kinder. Hausbesuche in Bad Säckingen."
+  "Professionelle Haarschnitte, Färben, Strähnen, Styling und mehr. Hausbesuche in Bad Säckingen."
 );
 
 const services = [
   {
     name: "Haarschnitt Damen",
-    description: "Moderne Schnitte von Bob bis Langhaar, inklusive Waschen und Föhnen.",
+    description: "Kurz, mittel oder lang – inkl. Pony schneiden (5€). Professioneller Schnitt ab 40€.",
     icon: Scissors,
-    price: "Ab 35€",
+    price: "Ab 40€",
   },
   {
-    name: "Haarschnitt Herren",
-    description: "Klassische und moderne Herrenschnitte.",
-    icon: User,
-    price: "Ab 30€",
-  },
-  {
-    name: "Haarschnitt Kinder",
-    description: "Sanfte und spielerische Schnitte für die Kleinsten.",
+    name: "Haarschnitt Herren & Kinder",
+    description: "Klassischer Herrenschnitt (35€) und Kinderschnitt bis 12 Jahre (20€).",
     icon: Users,
-    price: "Ab 25€",
+    price: "Ab 20€",
   },
   {
-    name: "Färben & Tönen",
-    description: "Natürliche Farben, Strähnen und Ansätze.",
+    name: "Farbe & Strähnen",
+    description: "Komplett- oder Ansatzfarbe, Strähnen in allen Längen und Glanz-Pflege-Tönung.",
     icon: Palette,
     price: "Ab 30€",
   },
   {
-    name: "Styling & Föhnen",
-    description: "Föhnfrisuren und Styling für jeden Anlass.",
-    icon: Crown,
-    price: "Ab 20€",
+    name: "Styling & Glätten",
+    description: "Föhnen (15–30€) und Glätten (20–30€) je nach Aufwand und Haarlänge.",
+    icon: Sparkles,
+    price: "Ab 15€",
   },
   {
-    name: "Intensivpflege",
-    description: "Haarkuren, Masken und Behandlungen für gesundes Haar.",
-    icon: Sparkles,
-    price: "Ab 35€",
+    name: "Dauerwelle",
+    description: "Dauerwelle komplett inklusive Schneiden – für natürliche Locken und Volumen.",
+    icon: User,
+    price: "80€",
+  },
+  {
+    name: "Augen & Extras",
+    description: "Wimpern färben (15€) und Augenbrauen färben (7€) für den perfekten Look.",
+    icon: Eye,
+    price: "Ab 7€",
   },
 ];
 
