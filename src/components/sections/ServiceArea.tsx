@@ -4,19 +4,6 @@ import { MapPin } from "lucide-react";
 
 const areas = [
   {
-    label: "Bad Säckingen",
-    icon: "📍",
-    places: [
-      "Kernstadt",
-      "Wallbach",
-      "Rippolingen",
-      "Harpolingen",
-      "Obersäckingen",
-      "Liedertswil",
-      "Bad Abbach",
-    ],
-  },
-  {
     label: "Angrenzende Gemeinden",
     icon: "🗺️",
     places: [

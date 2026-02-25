@@ -1,11 +1,9 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/shell/Container";
 import { SectionHeading } from "@/components/common/SectionHeading";
-import { Button } from "@/components/ui/button";
 
 const galleryImages = [
   "/images/friseur-2.jpg",
@@ -86,17 +84,6 @@ export function GalleryPreview() {
           ))}
         </motion.div>
 
-        <motion.div
-          className="text-center"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          <Button asChild size="lg" className="bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-stone-950 shadow-lg shadow-amber-900/50 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-0">
-            <Link href="/galerie">Vollständige Galerie ansehen</Link>
-          </Button>
-        </motion.div>
       </Container>
     </section>
   );
