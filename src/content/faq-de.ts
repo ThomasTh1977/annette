@@ -32,7 +32,7 @@ export const faq = [
   {
     question: "Bieten Sie auch Termine für Gruppen oder besondere Anlässe an? 💍",
     answer:
-      "Ja – ich freue mich über Anfragen für Gesellschaftsabende, Geburtstage oder Familientage. Für Gruppen ab 3 Personen am gleichen Ort sind Sonderkonditionen möglich. Sprechen Sie mich direkt an.",
+      "Ja – ich freue mich über Anfragen für Gesellschaftsabende, Geburtstage oder Familientage.",
   },
   {
     question: "Gilt die Kleinunternehmerregelung – werden Rechnungen ausgestellt? 🧾",
