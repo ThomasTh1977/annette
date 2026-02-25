@@ -33,7 +33,7 @@ export default function Impressum() {
             Telefon:{" "}
             <a href={`tel:${siteConfig.phone}`}>{siteConfig.phone}</a><br />
             E-Mail:{" "}
-            <a href="mailto:info@annette-theobald.de">info@annette-theobald.de</a><br />
+            <a href="mailto:annette.asal@icloud.com">annette.asal@icloud.com</a><br />
             WhatsApp:{" "}
             <a href={siteConfig.whatsapp} rel="noopener noreferrer">
               Jetzt schreiben

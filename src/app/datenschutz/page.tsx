@@ -25,8 +25,8 @@ export default function Datenschutz() {
             Deutschland<br />
             Telefon: +49 170 5263873<br />
             E-Mail:{" "}
-            <a href="mailto:info@annette-theobald.de">
-              info@annette-theobald.de
+            <a href="mailto:annette.asal@icloud.com">
+              annette.asal@icloud.com
             </a>
           </p>
 
@@ -159,8 +159,8 @@ export default function Datenschutz() {
           </ul>
           <p>
             Zur Ausübung Ihrer Rechte wenden Sie sich bitte an:{" "}
-            <a href="mailto:info@annette-theobald.de">
-              info@annette-theobald.de
+            <a href="mailto:annette.asal@icloud.com">
+              annette.asal@icloud.com
             </a>
           </p>
 
