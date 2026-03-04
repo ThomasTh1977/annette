@@ -17,6 +17,7 @@ export function Hero() {
           src="/images/friseur-1.jpg"
           alt=""
           fill
+          sizes="100vw"
           className="object-cover object-center"
           priority
         />
@@ -33,54 +34,16 @@ export function Hero() {
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-yellow-900/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/4 pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 w-[700px] h-[300px] bg-amber-800/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
 
-      {/* Floating hairdresser icons */}
-      <motion.div
-        className="absolute top-24 left-[6%] text-amber-500 pointer-events-none"
-        animate={{ rotate: [0, 20, -8, 0], y: [0, -10, 6, 0] }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <Scissors className="w-10 h-10 xl:w-14 xl:h-14 drop-shadow" />
-      </motion.div>
-
-      <motion.div
-        className="absolute top-28 right-[8%] text-amber-400 pointer-events-none"
-        animate={{ rotate: [0, 180, 360], scale: [1, 1.15, 1] }}
-        transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-      >
-        <Star className="w-8 h-8 xl:w-11 xl:h-11 fill-amber-300 drop-shadow" />
-      </motion.div>
-
-      <motion.div
-        className="absolute bottom-28 left-[10%] text-yellow-400 pointer-events-none"
-        animate={{ y: [0, -18, 0], opacity: [0.6, 1, 0.6] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
-      >
-        <Sparkles className="w-9 h-9 xl:w-12 xl:h-12 drop-shadow" />
-      </motion.div>
-
-      <motion.div
-        className="absolute bottom-36 right-[12%] text-amber-500 pointer-events-none"
-        animate={{ rotate: [0, -25, 10, 0], scale: [1, 1.1, 0.95, 1] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
-      >
-        <Heart className="w-7 h-7 xl:w-9 xl:h-9 fill-rose-200 drop-shadow" />
-      </motion.div>
-
-      {/* Small decorative dots */}
-      {[...Array(5)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute rounded-full bg-amber-500/30 pointer-events-none"
-          style={{
-            width: `${8 + i * 2}px`,
-            height: `${8 + i * 2}px`,
-            top: `${15 + i * 14}%`,
-            left: `${3 + (i % 2) * 4}%`,
-          }}
-          animate={{ scale: [1, 1.6, 1], opacity: [0.3, 0.7, 0.3] }}
-          transition={{ duration: 3 + i * 0.6, repeat: Infinity, delay: i * 0.5 }}
-        />
-      ))}
+      {/* Decorative icons – statisch positioniert, nur auf Desktop sichtbar */}
+      <div className="absolute top-24 left-[6%] text-amber-500 pointer-events-none hidden lg:block">
+        <Scissors className="w-10 h-10 xl:w-14 xl:h-14 drop-shadow opacity-40" />
+      </div>
+      <div className="absolute top-28 right-[8%] text-amber-400 pointer-events-none hidden lg:block">
+        <Star className="w-8 h-8 xl:w-11 xl:h-11 fill-amber-300 drop-shadow opacity-40" />
+      </div>
+      <div className="absolute bottom-28 left-[10%] text-yellow-400 pointer-events-none hidden lg:block">
+        <Sparkles className="w-9 h-9 xl:w-12 xl:h-12 drop-shadow opacity-40" />
+      </div>
 
       <Container className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 items-center">
@@ -177,29 +140,13 @@ export function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            {/* Rotating decorative rings */}
-            <motion.div
-              className="absolute w-[105%] h-[105%] rounded-full border-2 border-amber-600/40"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-            />
-            <motion.div
-              className="absolute w-[118%] h-[118%] rounded-full border border-dashed border-yellow-600/30"
-              animate={{ rotate: -360 }}
-              transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
-            />
-            <motion.div
-              className="absolute w-[130%] h-[130%] rounded-full border border-amber-700/20"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-            />
+            {/* Decorative rings – statisch */}
+            <div className="absolute w-[105%] h-[105%] rounded-full border-2 border-amber-600/40" />
+            <div className="absolute w-[118%] h-[118%] rounded-full border border-dashed border-yellow-600/30" />
+            <div className="absolute w-[130%] h-[130%] rounded-full border border-amber-700/20" />
 
-            {/* Floating image */}
-            <motion.div
-              animate={{ y: [0, -14, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              className="relative z-10"
-            >
+            {/* Image container */}
+            <div className="relative z-10">
               {/* Glow */}
               <div className="absolute -inset-6 bg-gradient-to-br from-amber-600 via-yellow-500 to-amber-400 rounded-full blur-2xl opacity-35 pointer-events-none" />
 
@@ -217,32 +164,24 @@ export function Hero() {
                 </div>
               </div>
 
-              {/* Floating info card – top right */}
-              <motion.div
-                className="absolute -top-4 -right-2 xl:-top-6 xl:-right-4 bg-stone-900 rounded-2xl shadow-lg shadow-amber-900/40 px-4 py-2.5 flex items-center gap-2.5 border border-amber-800/50"
-                animate={{ y: [0, -7, 0] }}
-                transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut", delay: 0.4 }}
-              >
+              {/* Info card – top right */}
+              <div className="absolute -top-4 -right-2 xl:-top-6 xl:-right-4 bg-stone-900 rounded-2xl shadow-lg shadow-amber-900/40 px-4 py-2.5 flex items-center gap-2.5 border border-amber-800/50">
                 <span className="text-xl">⭐</span>
                 <div>
                   <div className="text-xs font-bold text-amber-200 leading-tight">5.0 Bewertung</div>
                   <div className="text-[10px] text-stone-500">Top Friseurin</div>
                 </div>
-              </motion.div>
+              </div>
 
-              {/* Floating info card – bottom left */}
-              <motion.div
-                className="absolute -bottom-4 -left-2 xl:-bottom-6 xl:-left-4 bg-stone-900 rounded-2xl shadow-lg shadow-amber-900/40 px-4 py-2.5 flex items-center gap-2.5 border border-amber-800/50"
-                animate={{ y: [0, 7, 0] }}
-                transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              >
+              {/* Info card – bottom left */}
+              <div className="absolute -bottom-4 -left-2 xl:-bottom-6 xl:-left-4 bg-stone-900 rounded-2xl shadow-lg shadow-amber-900/40 px-4 py-2.5 flex items-center gap-2.5 border border-amber-800/50">
                 <span className="text-xl">✂️</span>
                 <div>
                   <div className="text-xs font-bold text-amber-200 leading-tight">Hausbesuch</div>
                   <div className="text-[10px] text-stone-500">Bad Säckingen</div>
                 </div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </motion.div>
 
         </div>

@@ -23,6 +23,7 @@ export function AboutAnnette() {
               alt="Professionelle Friseurwerkzeuge – Schere und Haare"
               width={500}
               height={500}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="rounded-2xl shadow-xl object-cover w-full"
             />
           </div>
