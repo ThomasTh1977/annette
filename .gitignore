@@ -3,6 +3,9 @@ node_modules/
 /.pnp
 .pnp.js
 
+# TypeScript
+tsconfig.tsbuildinfo
+
 # Next.js build output
 /.next/
 /out/
