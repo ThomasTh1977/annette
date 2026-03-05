@@ -97,13 +97,23 @@ export function PricingPreview() {
           <p className="text-sm text-stone-500">
             {siteConfig.kleinunternehmerNote}
           </p>
-          <Button
-            asChild
-            size="lg"
-            className="bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-stone-950 font-semibold border-0 shadow-lg shadow-amber-900/40 hover:shadow-xl transition-all duration-300"
-          >
-            <Link href="/preise">Vollständige Preisliste ansehen</Link>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Button
+              asChild
+              size="lg"
+              className="bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-stone-950 font-semibold border-0 shadow-lg shadow-amber-900/40 hover:shadow-xl transition-all duration-300"
+            >
+              <Link href="/termin">Termin konfigurieren</Link>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="border-amber-700 text-amber-400 hover:bg-amber-900/30 hover:border-amber-500 transition-all duration-300"
+            >
+              <Link href="/preise">Vollständige Preisliste</Link>
+            </Button>
+          </div>
         </div>
       </Container>
     </section>

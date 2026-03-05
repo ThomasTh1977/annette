@@ -1,10 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle } from "lucide-react";
-import { buildWhatsAppLink } from "@/lib/whatsapp";
+import { Phone, Sparkles } from "lucide-react";
 
 export function MobileStickyCTA() {
   return (
@@ -34,10 +34,10 @@ export function MobileStickyCTA() {
             size="lg"
             className="w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-stone-950 font-semibold py-2.5 rounded-xl text-sm sm:text-base shadow-md shadow-amber-900/50 border-0 transition-all duration-200"
           >
-            <a href={buildWhatsAppLink()} rel="noopener noreferrer" className="flex items-center justify-center gap-2">
-              <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
-              Termin anfragen
-            </a>
+            <Link href="/termin" className="flex items-center justify-center gap-2">
+              <Sparkles className="w-4 h-4 sm:w-5 sm:h-5" />
+              Termin konfigurieren
+            </Link>
           </Button>
         </motion.div>
       </div>
