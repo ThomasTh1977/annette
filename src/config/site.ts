@@ -1,4 +1,7 @@
 export const siteConfig = {
+  // Auf true setzen sobald die Gewerbeanmeldung durch ist
+  isLive: false,
+
   name: "Annette Theobald",
   title: "Annette Theobald - Mobile Friseurin",
   description: "Professionelle mobile Friseurdienste in Bad Säckingen und Umgebung. Hausbesuche für Haarschnitte, Färben und Styling.",

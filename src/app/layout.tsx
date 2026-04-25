@@ -4,6 +4,8 @@ import "./globals.css";
 import { Header } from "@/components/shell/Header";
 import { Footer } from "@/components/shell/Footer";
 import { MobileStickyCTA } from "@/components/shell/MobileStickyCTA";
+import { ComingSoon } from "@/components/sections/ComingSoon";
+import { siteConfig } from "@/config/site";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -56,8 +58,8 @@ export const metadata: Metadata = {
     images: ["/images/friseur-2.jpg"],
   },
   robots: {
-    index: true,
-    follow: true,
+    index: siteConfig.isLive,
+    follow: siteConfig.isLive,
   },
 };
 
@@ -71,12 +73,18 @@ export default function RootLayout({
       <body
         className={`${raleway.variable} ${playfairDisplay.variable} ${greatVibes.variable} font-sans antialiased bg-gradient-to-br from-stone-950 via-zinc-900 to-stone-950 min-h-screen`}
       >
-        <Header />
-        <div className="pt-20 xl:pt-24 pb-24 md:pb-0"> {/* Account for fixed header (h-20/xl:h-24) and mobile sticky CTA */}
-          {children}
-        </div>
-        <Footer />
-        <MobileStickyCTA />
+        {siteConfig.isLive ? (
+          <>
+            <Header />
+            <div className="pt-20 xl:pt-24 pb-24 md:pb-0">
+              {children}
+            </div>
+            <Footer />
+            <MobileStickyCTA />
+          </>
+        ) : (
+          <ComingSoon />
+        )}
       </body>
     </html>
   );
